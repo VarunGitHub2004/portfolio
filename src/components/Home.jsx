@@ -49,9 +49,9 @@ const Home = () => {
       <section>
         <div>
           
-          {/* <motion.h1 {...animations.h1}>
+          <motion.h1 {...animations.h1}>
             Hi, I Am <br /> Varun Tiwari
-          </motion.h1> */}
+          </motion.h1>
 
           <Typewriter
             options={{
