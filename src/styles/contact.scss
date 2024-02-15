@@ -1,0 +1,203 @@
+.voltage-button {
+  position: relative;
+  width: min-content;
+}
+
+.voltage-button button {
+  color: white;
+  background: #0D1127;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 5rem;
+  border: 5px solid #5978F3;
+  font-size: 1.2rem;
+  line-height: 1em;
+  letter-spacing: 0.075em;
+  transition: background 0.3s;
+}
+
+.voltage-button button:hover {
+  cursor: pointer;
+  background: #0F1C53;
+}
+
+.voltage-button button:hover + svg, .voltage-button button:hover + svg + .dots {
+  opacity: 1;
+}
+
+.voltage-button svg {
+  display: block;
+  position: absolute;
+  top: -0.75em;
+  left: -0.25em;
+  width: calc(100% + 0.5em);
+  height: calc(100% + 1.5em);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: 0.1s;
+}
+
+.voltage-button svg path {
+  stroke-dasharray: 100;
+  filter: url("#glow");
+}
+
+.voltage-button svg path.line-1 {
+  stroke: #f6de8d;
+  stroke-dashoffset: 0;
+  animation: spark-1 3s linear infinite;
+}
+
+.voltage-button svg path.line-2 {
+  stroke: #6bfeff;
+  stroke-dashoffset: 500;
+  animation: spark-2 3s linear infinite;
+}
+
+.voltage-button .dots {
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.4s;
+}
+
+.voltage-button .dots .dot {
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
+}
+
+.voltage-button .dots .dot-1 {
+  top: 0;
+  left: 20%;
+  animation: fly-up 3s linear infinite;
+}
+
+.voltage-button .dots .dot-2 {
+  top: 0;
+  left: 55%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.voltage-button .dots .dot-3 {
+  top: 0;
+  left: 80%;
+  animation: fly-up 3s linear infinite;
+  animation-delay: 1s;
+}
+
+.voltage-button .dots .dot-4 {
+  bottom: 0;
+  left: 30%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 2.5s;
+}
+
+.voltage-button .dots .dot-5 {
+  bottom: 0;
+  left: 65%;
+  animation: fly-down 3s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes spark-1 {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes spark-2 {
+  to {
+    stroke-dashoffset: -500;
+  }
+}
+
+@keyframes fly-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.2);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(-1.5rem) scale(0.4);
+  }
+
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(-3rem) scale(0.2);
+  }
+}
+
+@keyframes fly-down {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.2);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(1.5rem) scale(0.4);
+  }
+
+  10%, 100% {
+    opacity: 0;
+    transform: translateY(3rem) scale(0.2);
+  }
+}
+
+
+.lightHover {
+  background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #fffe00);
+  border: none;
+  font-size: 1.2em;
+  border-radius: 0;
+  padding: 4px;
+  transition: border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s, 
+  padding 0.2s ease-in;
+  position: relative;
+}
+
+.button__int {
+  background-color: #212121;
+  color: white;
+  border-radius: 0;
+  padding: 10px 40px;
+  transition: all 0.2s ease-in,
+  border-top-left-radius 0.2s ease-in, 
+  border-top-right-radius 0.2s ease-in 0.15s, 
+  border-bottom-right-radius 0.2s ease-in 0.3s,
+  border-bottom-left-radius 0.2s ease-in 0.45s,
+  padding 0.2s ease-in;
+  font-weight: 600;
+  z-index: -1;
+  box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.7),
+    25px -10px 30px -5px rgba(255, 0, 212, 0.7),
+    25px 10px 30px -5px rgba(255, 174, 0, 0.7),
+    -25px 10px 30px -5px rgba(255, 230, 0, 0.7);
+}
+
+.lightHover:active .button__int {
+  padding: 10px 30px;
+}
+
+.lightHover:hover {
+  border-radius: 1.5em;
+}
+
+.lightHover:hover .button__int {
+  border-radius: 1.3em;
+}
+
+.lightHover:hover .button__int {
+  box-shadow: -15px -10px 30px -5px rgba(225, 0, 255, 0.8),
+    15px -10px 30px -5px rgba(255, 0, 212, 0.8),
+    15px 10px 30px -5px rgba(255, 174, 0, 0.8),
+    -15px 10px 30px -5px rgba(255, 230, 0.8);
+}

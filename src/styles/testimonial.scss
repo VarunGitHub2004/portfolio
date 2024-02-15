@@ -1,0 +1,59 @@
+#testimonial {
+    height: 100vh;
+    width: 100%;
+    padding: $p;
+    background: $color4;
+    color: $color5;
+    overflow: hidden;
+
+    >h2 {
+        font: 700 2.5rem $text2;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    >section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        height: 40rem;
+        padding: 8rem;
+        background: $color1;
+        gap: 20px;
+
+        >article {
+            height: 100%;
+            width: 30%;
+            background: $color4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+
+            >img {
+                top: 0%;
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+
+            >font {
+                font-size: 1.25rem;
+            }
+
+            >p {
+                margin: 20px 0;
+                text-align: center;
+                font-size: 0.9rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

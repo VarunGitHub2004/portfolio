@@ -1,0 +1,30 @@
+@keyframes animateSvg {
+    to {
+      transform: translate(-50%, -10px);
+    }
+  }
+  
+@keyframes upanddown{
+  to{
+    transform: translateY(-5px);
+  }
+}
+@keyframes animateh2{
+  to{
+  transition: .3s;
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes shake{
+  0% ,100%{
+transform: translateY(0);
+  }
+  25%{
+    transform: translateY(0.125rem);
+  }
+  75%{
+    transform: translateY(-0.125rem);
+
+  }
+}

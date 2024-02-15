@@ -1,0 +1,68 @@
+{
+    "projects": [
+      {
+        "id":1,
+        "date": "10/1/2024",
+        "title": "VIDEO HUB",
+        "description": "This is a Video Streaming App. This project is used to demonstrate routing in React",
+        "url": "",
+        "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+      },
+      {
+        "id":2,
+        "date": "13/1/2024",
+        "title": "XCrypto",
+        "description": "It provide details about the real-time Crypto currency status. ",
+        "url": "",
+        "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
+      },
+      {
+        "id":3,
+        "date": "15/1/2024",
+        "title": "PORTFOLIO",
+        "description": "My portfolio containg my personal information within my project",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      },
+      {
+        "id":4,
+        "date": "15/1/2024",
+        "title": "ContactApp",
+        "description": "This mini-project demonstrate CRUD Operation in React",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      },
+      {
+        "id":5,
+        "date": "15/1/2024",
+        "title": "WheatherApp",
+        "description": "This Wheather App provide real-time wheather details.",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      },
+      {
+        "id":6,
+        "date": "15/1/2024",
+        "title": "Calculator",
+        "description": "A basic calculator for perfoming mathematical calculations",
+        "url": "/",
+        "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
+      },
+      {
+        "id":7,
+        "date": "15/1/2024",
+        "title": "RecipeFinder",
+        "description": "This project is for demonstrating the use of APIs.",
+        "url": "https://glittery-faloodeh-4eafa7.netlify.app",
+        "imgSrc": ""
+      },
+      {
+        "id":8,
+        "date": "15/1/2024",
+        "title": "Quiz App",
+        "description": "This is a normal quiz app",
+        "url": "https://glittery-faloodeh-4eafa7.netlify.app",
+        "imgSrc": ""
+      }
+    ]
+  }
